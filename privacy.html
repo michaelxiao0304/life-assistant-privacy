@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="生活助理 iOS 应用隐私声明。了解生活记录、健康权限、照片、系统同步及本机数据的导出与删除。">
+  <title>生活助理 · 隐私声明</title>
+  <style>
+    :root { color-scheme: light dark; --paper: #fffdf8; --ink: #202124; --subtle: #55545b; --link: #4338ca; }
+    @media (prefers-color-scheme: dark) {
+      :root { --paper: #19191d; --ink: #f2f1f4; --subtle: #c2c1c9; --link: #b9b4ff; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.8 system-ui, sans-serif; }
+    main { max-width: 45rem; margin: auto; padding: clamp(1.2rem, 5vw, 3.5rem) 1.3rem 4rem; }
+    h1 { margin: 0; font-size: clamp(1.85rem, 5vw, 2.55rem); line-height: 1.3; }
+    h2 { margin: 2rem 0 .4rem; font-size: 1.25rem; }
+    p { margin: .5rem 0; }
+    .version { color: var(--subtle); margin-bottom: 1.5rem; }
+    a { color: var(--link); text-underline-offset: .18em; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>生活助理 · 隐私声明</h1>
+  <p class="version">适用于 iOS 版 1.0（含 TestFlight 测试版） · 更新于 <time datetime="2026-11-20">2026 年 11 月 20 日</time></p>
+  <p>生活助理在你的 iPhone 上整理日常记录。应用无需注册账号，开发者不运营接收生活记录的服务器，也不使用广告、跟踪或第三方统计 SDK。</p>
+
+  <h2>你记录的内容存在哪里？</h2>
+  <p>你主动填写的生日、性别、疾病与用药、运动、经期、日程、提醒、纪念日、其他记录和照片保存在应用的本机存储空间。搜索、经期阶段推算和照片文字识别都在设备上完成。相机用来拍摄或扫描，系统照片选择器只提供你选中的图片。你可以核对识别结果，再决定写入哪些字段。</p>
+
+  <h2>Apple 健康会提供哪些数据？</h2>
+  <p>你可以分别授权读取步数、距离、活动能量、心率、静息心率、睡眠、体重、经量及体能训练，用于按日期展示健康摘要或关联训练记录。应用会在本机缓存已读取的内容。生活助理不向 Apple 健康写入数据，也不向开发者或广告商传送健康数据。</p>
+  <p>你可以在应用内关闭某个健康数据类型以清理其读取缓存，并可在 Apple 健康或 iOS 设置中撤销授权。手动添加的同类记录可在日历中单独编辑或删除。</p>
+
+  <h2>什么会写入系统日历或提醒事项？</h2>
+  <p>为某条日程或提醒开启同步后，应用会将相应内容写入 iOS 的默认日历或提醒列表。生日提醒也可按此方式同步。应用使用 EventKit 完整访问权限，按保存的关联标识核对、更新自己创建的系统副本，不把系统原有的日程、邮箱日历或历史提醒导入时间线。</p>
+  <p>默认日历或提醒列表如果关联 iCloud、邮箱或其他账户，系统可能根据该账户的设置将副本同步到服务提供商或共享列表。你可以在保存前关闭该条记录的同步。</p>
+
+  <h2>应用锁和通知如何工作？</h2>
+  <p>应用锁通过 iOS 的 Face ID、Touch ID 或设备密码验证，应用仅获取验证结果。通知在本机安排，默认隐藏事项标题。你可以在设置中更改通知内容或关闭通知。</p>
+
+  <h2>如何导出、备份或删除？</h2>
+  <p>工作数据库、照片和系统读取缓存排除在自动 iCloud 备份之外。你可以导出本机记录、选定的照片和自行填写的来源备注。普通 JSON、CSV 和照片导出文件为明文；需要保护副本时，可选择口令加密的备份。导出和加密备份均不包含 Apple 健康读取缓存，加密备份也不含应用锁配置。将文件另存到云盘后，该副本由你选择的服务提供商处理。</p>
+  <p>单条记录可在详情页删除。「设置」中的「清空本应用的全部数据」会删除本机记录、照片、缓存以及应用内生成的导出和备份文件。已另存的文件、Apple 健康原始数据和已写入系统日历或提醒事项的副本仍由你在相应位置管理。</p>
+
+  <h2>测试反馈与隐私联系</h2>
+  <p>使用 TestFlight 测试时，Apple 会按其规则处理测试使用情况、崩溃信息和你提交的反馈，并向开发者提供相关测试信息。测试用户可在 TestFlight 中打开「生活助理」，选择「发送 Beta 版反馈」联系开发者。提交截图前，请遮盖健康记录、姓名等个人信息。<a href="https://testflight.apple.com/">了解 TestFlight 如何处理测试数据</a>。</p>
+  <p>一般隐私问题也可以通过<a href="https://github.com/michaelxiao0304/life-assistant-privacy/issues">生活助理的 GitHub 问题页</a>联系开发者。该页面的留言公开可见，请勿提交病历、照片、备份或其他私人资料。</p>
+  <p>本声明由 GitHub Pages 托管，页面没有表单、分析脚本或外部字体。访问页面产生的网络请求由 GitHub 处理。<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">查看 GitHub 隐私声明</a>。</p>
+</main>
+</body>
+</html>
